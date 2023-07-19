@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Span</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="spinBtn">Çevir</div>
+        <div class="wheel">
+            <div class="number" style="--i:1;--clr:#db7093;"><span>Americano</span></div>
+            <div class="number" style="--i:2;--clr:#db7093;"><span>İced Latte</span></div>
+            <div class="number" style="--i:3;--clr:#db7093;"><span>Cold Brew</span></div>
+            <div class="number" style="--i:4;--clr:#db7093;"><span>Su</span></div>
+            <div class="number" style="--i:5;--clr:#db7093;"><span>Çay</span></div>
+            <div class="number" style="--i:6;--clr:#db7093;"><span>Kola</span></div>
+            <div class="number" style="--i:7;--clr:#db7093;"><span>Fanta</span></div>
+            <div class="number" style="--i:8;--clr:#db7093;"><span>Ayran</span></div>
+
+        </div>
+
+
+
+
+        <script>
+            let wheel= document.querySelector('.wheel');
+            let spinBtn=document.querySelector('.spinBtn');
+            let value= Math.ceil(Math.random() * 3600);
+            spinBtn.onclick=function(){
+                wheel.style.transform = "rotate(" + value +  "deg)";
+                value += Math.ceil(Math.random()* 3600);
+            }
+            
+            
+            
+            
+            
+            
+            
+            </script>
+
+</body>
+
+</html>
